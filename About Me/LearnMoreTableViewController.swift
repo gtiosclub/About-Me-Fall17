@@ -44,7 +44,7 @@ class LearnMoreTableViewController: UITableViewController {
 			let safari = SFSafariViewController(url: URL(string: "https://drive.google.com/open?id=0B5KPF_4hrrGedHRwZnBPaVBlM0E")!)
 			self.navigationController?.pushViewController(safari, animated: true)
 		}
-  }
+	}
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
