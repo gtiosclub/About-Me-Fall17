@@ -34,15 +34,16 @@ class LearnMoreTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         // #warning Incomplete implementation, return the number of rows
         return 2
     }
-  
-  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    if (indexPath.row == 1) {
-      let safari = SFSafariViewController(url: URL(string: "https://drive.google.com/open?id=0B5KPF_4hrrGedHRwZnBPaVBlM0E")!)
-      self.navigationController?.pushViewController(safari, animated: true)
-    }
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if (indexPath.row == 1) {
+			let safari = SFSafariViewController(url: URL(string: "https://drive.google.com/open?id=0B5KPF_4hrrGedHRwZnBPaVBlM0E")!)
+			self.navigationController?.pushViewController(safari, animated: true)
+		}
   }
 
     /*
