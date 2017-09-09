@@ -133,14 +133,62 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nVX-lv-xme">
                                 <rect key="frame" x="20" y="84" width="335" height="563"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="dYt-yj-JrK">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ww6-aH-D12">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="281.5"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-OP-44x">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="Do9-ze-jnf">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="221"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Development in Swift 😍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMX-Pn-JY7">
+                                                <rect key="frame" x="20" y="241" width="295" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vMX-Pn-JY7" secondAttribute="trailing" constant="20" id="03d-Et-2ab"/>
+                                            <constraint firstItem="Do9-ze-jnf" firstAttribute="top" secondItem="Ww6-aH-D12" secondAttribute="top" id="Bqe-Qy-aS6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Do9-ze-jnf" secondAttribute="trailing" id="CF8-iS-hC2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Do9-ze-jnf" secondAttribute="trailing" id="PRB-s4-D5Q"/>
+                                            <constraint firstItem="vMX-Pn-JY7" firstAttribute="top" secondItem="Do9-ze-jnf" secondAttribute="bottom" constant="20" id="RCx-6N-25F"/>
+                                            <constraint firstItem="Do9-ze-jnf" firstAttribute="leading" secondItem="Ww6-aH-D12" secondAttribute="leading" id="Tt3-93-g17"/>
+                                            <constraint firstItem="Do9-ze-jnf" firstAttribute="top" secondItem="Ww6-aH-D12" secondAttribute="top" id="gIR-Dp-Hvq"/>
+                                            <constraint firstItem="Do9-ze-jnf" firstAttribute="leading" secondItem="Ww6-aH-D12" secondAttribute="leading" id="gJ5-mK-I1m"/>
+                                            <constraint firstAttribute="bottom" secondItem="vMX-Pn-JY7" secondAttribute="bottom" constant="20" id="iBz-1Z-9qN"/>
+                                            <constraint firstItem="vMX-Pn-JY7" firstAttribute="leading" secondItem="Ww6-aH-D12" secondAttribute="leading" constant="20" id="vC0-Ay-ewo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-gx-lBa">
                                         <rect key="frame" x="0.0" y="281.5" width="335" height="281.5"/>
-                                    </imageView>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-27-MgC">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="221"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel 🚀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyb-qe-L4j">
+                                                <rect key="frame" x="20" y="241" width="295" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="v7t-27-MgC" secondAttribute="trailing" id="4ds-oA-pFe"/>
+                                            <constraint firstAttribute="trailing" secondItem="v7t-27-MgC" secondAttribute="trailing" id="NsA-Q7-XnU"/>
+                                            <constraint firstItem="wyb-qe-L4j" firstAttribute="top" secondItem="v7t-27-MgC" secondAttribute="bottom" constant="20" id="Qy7-xO-9Ya"/>
+                                            <constraint firstAttribute="trailing" secondItem="wyb-qe-L4j" secondAttribute="trailing" constant="20" id="mJW-lM-Tx2"/>
+                                            <constraint firstItem="v7t-27-MgC" firstAttribute="top" secondItem="rZR-gx-lBa" secondAttribute="top" id="nDg-EQ-hr1"/>
+                                            <constraint firstItem="v7t-27-MgC" firstAttribute="top" secondItem="rZR-gx-lBa" secondAttribute="top" id="qMC-L9-fYy"/>
+                                            <constraint firstAttribute="bottom" secondItem="wyb-qe-L4j" secondAttribute="bottom" constant="20" id="qX6-s4-3Ra"/>
+                                            <constraint firstItem="wyb-qe-L4j" firstAttribute="leading" secondItem="rZR-gx-lBa" secondAttribute="leading" constant="20" id="xdr-zi-N8a"/>
+                                            <constraint firstItem="v7t-27-MgC" firstAttribute="leading" secondItem="rZR-gx-lBa" secondAttribute="leading" id="xwP-pd-EAG"/>
+                                            <constraint firstItem="v7t-27-MgC" firstAttribute="leading" secondItem="rZR-gx-lBa" secondAttribute="leading" id="zsQ-I2-OZ6"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
